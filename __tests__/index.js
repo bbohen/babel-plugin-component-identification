@@ -10,9 +10,14 @@ pluginTest({
   fixtures: path.join(__dirname, '__fixtures__'),
   tests: [
     {
-      title: 'Handles es2015 class component identification',
+      title: 'Adds identifier to an es2015 class component',
       fixture: 'classComponent.before.js',
       outputFixture: 'classComponent.after.js',
+    },
+    {
+      title: 'Adds identifier to a stateless functional components',
+      fixture: 'statelessFunctionalComponent.before.js',
+      outputFixture: 'statelessFunctionalComponent.after.js',
     },
   ],
 });
