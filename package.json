@@ -5,6 +5,9 @@
   "description": "Identifies react components and adds an attribute to them with their identifier",
   "author": "Brad Bohen",
   "license": "MIT",
+  "files": [
+    "lib"
+  ],
   "scripts": {
     "lint": "eslint --fix src __tests__",
     "test": "jest __tests__/index.js",
