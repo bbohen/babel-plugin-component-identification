@@ -7,10 +7,10 @@ Identifies react components and adds a `data-component-id` to them with their id
 <div data-component-id="ExampleComponent">I am component</div>
 ```
 
-This plugin identifies a component as:
+This plugin identifies a component if it detects:
 
-1. An instance of a class with a render method that returns JSX
-2. A function that returns JSX
+- An instance of a class with a render method that returns JSX
+- A function that returns JSX
 
 ## Install
 

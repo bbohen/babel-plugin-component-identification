@@ -41,9 +41,7 @@ export default function ({ types: t }) {
             ),
           ];
 
-          if (argument) {
-            argument.openingElement.attributes.push(...newAttributes);
-          }
+          argument.openingElement.attributes.push(...newAttributes);
         }
       },
     },
