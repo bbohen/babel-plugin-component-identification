@@ -1,7 +1,5 @@
 # Dist bundle
-dist
-bundle.js
-bundle.js.map
+lib
 
 # Logs
 logs

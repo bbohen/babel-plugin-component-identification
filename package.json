@@ -1,19 +1,18 @@
 {
   "name": "babel-plugin-component-identification",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "description": "Identifies react components and adds an attribute to them with their identifier",
   "author": "Brad Bohen",
   "license": "MIT",
   "scripts": {
     "lint": "eslint --fix src __tests__",
-    "test": "jest __tests__/index.js"
-  },
-  "peerDependencies": {
-    "babel-preset-es2015": "^6.24.1",
-    "babel-preset-react": "^6.24.1",
-    "babel-preset-stage-0": "^6.24.1"
+    "test": "jest __tests__/index.js",
+    "build": "rm -rf lib && mkdir lib && babel src --out-dir lib",
+    "prepublish": "npm run build"
   },
   "devDependencies": {
+    "babel-cli": "^6.24.1",
     "babel-eslint": "^7.2.3",
     "babel-jest": "^20.0.3",
     "babel-plugin-tester": "^1.1.1",
@@ -24,5 +23,10 @@
     "eslint-plugin-node": "^4.2.2",
     "eslint-plugin-react": "^7.0.1",
     "jest": "^20.0.3"
+  },
+  "dependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1"
   }
 }

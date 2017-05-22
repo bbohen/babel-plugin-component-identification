@@ -62,7 +62,7 @@ var SampleClassComponent = function (_Component) {
 
       return _react2.default.createElement(
         'div',
-        { onClick: this.doSomething, 'data-id': 'SampleClassComponent'
+        { onClick: this.doSomething, 'data-component-id': 'SampleClassComponent'
         },
         _react2.default.createElement(
           'h1',

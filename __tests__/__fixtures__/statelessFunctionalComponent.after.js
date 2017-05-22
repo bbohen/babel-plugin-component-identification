@@ -19,7 +19,7 @@ var statelessFunctionalComponent = function statelessFunctionalComponent(props) 
     return _react2.default.createElement(
       'div',
       {
-        'data-id': 'anotherFunctionalComponent'
+        'data-component-id': 'anotherFunctionalComponent'
       },
       msg
     );
@@ -27,7 +27,7 @@ var statelessFunctionalComponent = function statelessFunctionalComponent(props) 
   return _react2.default.createElement(
     'div',
     {
-      'data-id': 'statelessFunctionalComponent'
+      'data-component-id': 'statelessFunctionalComponent'
     },
     _react2.default.createElement(
       'h1',

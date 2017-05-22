@@ -24,7 +24,7 @@ export default function ({ types: t }) {
 
         const newAttributes = [
           t.jSXAttribute(
-            t.jSXIdentifier('data-id'),
+            t.jSXIdentifier('data-component-id'),
             t.stringLiteral(identity),
           ),
         ];
