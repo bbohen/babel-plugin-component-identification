@@ -15,7 +15,7 @@ pluginTest({
       outputFixture: 'classComponent.after.js',
     },
     {
-      title: 'Adds identifier to a stateless functional components',
+      title: 'Adds identifier to a stateless functional component',
       fixture: 'statelessFunctionalComponent.before.js',
       outputFixture: 'statelessFunctionalComponent.after.js',
     },
