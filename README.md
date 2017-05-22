@@ -11,13 +11,13 @@ This plugin identifies a component as:
 ## Install
 
 ```sh
-    npm install --save-dev babel-plugin-component-identification
+npm install --save-dev babel-plugin-component-identification
 ```
 
 ## Usage (`.babelrc`)
 
 ```sh
 {
-    "presets": ["component-identification"]
+    "plugins": ["component-identification"]
 }
 ```
