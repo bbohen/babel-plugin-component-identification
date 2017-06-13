@@ -27,10 +27,11 @@ export default function ({ types: t }) {
         } else {
           // last ditch effort at looking for a named component
           // might just want to ignore these entirely
-          const {
-            node: { declarations: [{ name: variableDeclarationName }] },
-          } = path.findParent(pp => pp.isVariableDeclaration());
-          identity = variableDeclarationName;
+          const parent = path.findParent(pp => pp.isVariableDeclaration());
+          if (parent) {
+            const { declarations = [] } = parent.node;
+            identity = declarations[0].name;
+          }
         }
 
         if (argument && identity) {
