@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-component-identification",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "main": "lib/index.js",
   "description": "Identifies react components and adds an attribute to them with their identifier",
   "author": "Brad Bohen",
